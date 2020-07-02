@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>words</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let word of arrWords">
+    <h4 [ngStyle]="{color: word.memorized?'red': 'green'}">
+      {{word.en}}
+    </h4>
+    <p>{{word.vn}}</p>
+
+  </div>
+</ion-content>

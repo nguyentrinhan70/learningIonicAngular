@@ -1,0 +1,17 @@
+<!-- <h3>{{cityName===''?'Enter your city name': (cityName + ' is now ' + temp)}}</h3>
+<input placeholder="Enter your city name" [(ngModel)]="txtCityName">
+<br>
+<br>
+<ion-button (click)="getWeather();">Get weather</ion-button> -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{cityName===''? 'Enter your city name': (cityName + ' is Weather now: '+ temp)}} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <input placeholder="Enter your city name" [(ngModel)]="txtCityName">
+  <br><br>
+  <ion-button (click)="getWeather();">Get weather</ion-button>
+</ion-content> 

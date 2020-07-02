@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>learn-pipe</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p>
+    {{birthday|date:'fullDate'|uppercase}}
+    <br> <br>
+    {{person|json}}
+  </p>
+  <p>{{address|async}}</p>
+  <p>{{1.9}}</p>
+  <p>{{3.5|roundNum:true: 3}}</p>
+  <p>{{1.9|roundNum: true: 10}}</p>
+  <p>{{3.5|roundNum: false: 1}}</p>
+
+</ion-content>

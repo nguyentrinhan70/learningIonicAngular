@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>learn-pipe</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p>
+    {{birthday|date:'fullDate'|uppercase}}
+    <br> <br>
+    {{person|json}}
+  </p>
+  <p>{{address|async}}</p>
+
+</ion-content>

@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>contacts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let contact of contacts">
+    <a routerLink ="/contact-detail/{{contact.id}}/{{contact.name}}/{{contact.phoneNumber}}">
+      {{contact.name}}
+    </a>
+
+  </div>
+
+</ion-content>

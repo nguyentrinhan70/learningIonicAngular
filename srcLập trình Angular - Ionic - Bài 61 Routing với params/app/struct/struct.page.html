@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title >struct</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ul *ngIf="isShow">
+    <li *ngFor="let subject of arraySubjects">
+      <p>{{'Subject: '+ subject}}</p>
+    </li>
+  </ul>
+  <ion-button (click)="isShow=!isShow">Toggle</ion-button>
+</ion-content>

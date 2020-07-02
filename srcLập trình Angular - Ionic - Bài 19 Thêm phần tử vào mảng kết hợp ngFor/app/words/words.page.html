@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>words</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <input placeholder="English" [(ngModel)]="newEn">
+  <br>
+  <input placeholder="Vietnamese" [(ngModel)]="newVn">
+  <br>
+  <ion-button (click)="addWord();">Thêm từ mới</ion-button>
+  <div *ngFor="let word of arrWords">
+    <h4 [ngStyle]="{color: word.memorized?'red': 'green'}">
+      {{word.en}}
+    </h4>
+    <p>{{word.vn}}</p>
+
+  </div>
+</ion-content>
